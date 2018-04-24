@@ -1,0 +1,262 @@
+html{
+  position: relative;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+body{
+  overflow-x: inherit;
+  background: #ffffff;
+  font-family: 'Raleway','Arial', sans-serif;
+  color: #666666;
+  font-size: 14px;
+  margin-bottom: 250px;
+}
+
+@font-face{
+  font-family: 'mainlevee';
+  font-weight: normal;
+  font-style: normal;
+  src: url('./fonts/mainlevee.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: 'Vaivai_Handwritting';
+  src: url('./fonts/vaivaifont.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: 'Dosis';
+  src: url('./fonts/dosis.ttf') format('truetype');
+}
+
+.clearBoth{
+  clear: both;
+}
+
+/**********************************************************************
+
+Header CSS
+
+**********************************************************************/
+
+.navigation{
+  height: 60px;
+  background: white;
+  font-size: 22px;
+}
+
+.navigation + .clearBoth{
+  border-bottom: 0.5px solid black;
+}
+
+.head-nav{
+  position: relative;
+}
+
+.camion{
+  position: absolute;
+  height: 100px;
+  width: 180px;
+  top : -15px;
+  left : -123px; 
+  opacity: 0;
+}
+
+.camion2{
+  position: absolute;
+  height: 70px;
+  width: 110px;
+  top : 7px;
+  opacity: 0.3;
+}
+
+@media only screen and (max-width: 920px) {
+  .camion2{
+    display: none;
+  }
+}
+
+.brand img{
+  height: 50px;
+}
+
+.brand{
+  padding: 0 60px 0px 20px;
+  float: left;
+  line-height: 55px;
+}
+
+nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li{
+  float: left;
+  position: relative;
+}
+
+nav ul li:nth-last-child(1){
+  float: right;
+}
+
+nav ul li a{
+  display: block;
+  padding: 0 20px;
+  line-height: 60px;
+  color: #0D0D0D;
+  text-decoration: none;
+  font-family: 'mainlevee', sans-serif;
+}
+
+nav ul li a:hover, nav ul li a.current{
+  color: #ed237a;
+}
+
+/* Mobile navigation */
+
+.nav-mobile{
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: white;
+  height: 60px;
+  width: 60px;
+}
+
+@media only screen and (max-width: 920px) {
+  .nav-mobile{
+    display: block;
+  }
+
+  nav{
+    float: left;
+    width: 100%;
+    padding: 0 15px 0 15px;
+    background: #ffffff;
+  }
+
+  nav ul{
+    display: none;
+    text-align: center;
+  }
+
+  nav ul li{
+    float: none;
+  }
+
+  .nav-dropdown{
+    position: static;
+  }
+
+  nav ul li:nth-last-child(1){
+    float: none;
+  }
+
+}
+
+@media screen and (min-width: 920px) {
+  .nav-list{
+    display: block !important;
+  }
+}
+
+#nav-toggle{
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after{
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: #ed237a;
+  position: absolute;
+  display: block;
+  content: '';
+  transition: all 300ms ease-in-out;
+}
+
+#nav-toggle span:before{
+  top: -10px;
+}
+
+#nav-toggle span:after{
+  bottom: -10px;
+}
+
+#nav-toggle.active span{
+  background-color: transparent;
+}
+
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+
+#nav-toggle.active span:before{
+  transform: rotate(45deg);
+}
+
+#nav-toggle.active span:after{
+  transform: rotate(-45deg);
+}
+
+/**********************************************************************
+
+Footer CSS
+
+**********************************************************************/
+
+footer{
+  background: #ffffff;
+  text-align: center;
+  padding: 15px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 250px;
+  overflow: hidden;
+}
+
+/* 
+
+Footer list
+
+*/
+
+footer ul{
+  list-style: none;
+  margin: 0;
+  padding: 15px 0;
+}
+
+footer li{
+  display: inline-block;
+}
+
+.social svg path, .social svg circle{
+  fill: #ed237a;
+}
+
+.social svg:hover path, .social svg:hover circle{
+  fill: #75716a;
+}
+
+.footerLink a{
+  color: #75716a;
+  font-family: 'Raleway','Arial', sans-serif;
+  padding-right : 3px;
+}
+
+.footerLink li:not(:last-child) a{
+  border-right: 1.25px solid #75716a;
+}

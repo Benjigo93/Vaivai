@@ -1,0 +1,327 @@
+/**********************************************************************
+
+Index CSS
+
+**********************************************************************/
+
+/*
+
+Header slider section
+
+*/
+
+.section1{
+  position: relative;
+  width: inherit;
+  min-height: 190px;
+  z-index: 40;
+  background: #ffffff; 
+}
+
+.contenuSection1{
+  top: 0%;
+  left: 0%;
+  position: absolute;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  text-align: right;
+}
+
+.sliderBackground {
+  width: 100%;
+  position: relative;
+}
+
+.slideRel {
+  position: relative;
+}
+
+.sliderBackground img{
+  width: 100%;
+}
+
+.sliderShadow{
+  top: 0%;
+  left: 0%;
+  position: absolute;
+  background-color: rgba(0, 22, 35, 0.6);
+  width: 100%;
+  height: 100%;
+}
+
+#logo{
+  width: 20%;
+  position: inline;
+  margin-right: 10%;
+  margin-top: 5%;
+}
+
+#title{
+  margin-top: 6%;
+}
+
+h4{
+  color: white;
+  font-family: 'Vaivai_Handwritting', sans-serif;
+  text-align: right;
+  margin-right:32%;
+  transform: scale(1.8);
+  margin-bottom: 20px;
+  font-size: 80px;
+  line-height: 90px;
+}
+
+h5#subtitle{
+  color: white;
+  font-family: 'Vaivai_Handwritting', sans-serif;
+  text-align: right;
+  margin-right:32%;
+  transform: scale(1.8);
+  margin-bottom: 20px;
+  font-size: 60px;
+  line-height: 90px;
+}
+
+@media screen and (max-width: 920px) {
+  h4{
+    font-size: 10vw;
+    line-height: 12vw;
+  }
+
+  h5#subtitle{
+    font-size: 8vw;
+  }
+
+  #logo{
+    display: none;
+  }
+}
+
+/*
+
+Content section
+
+*/
+
+.feuilleGauche, .feuilleDroite{
+  position: absolute;
+  max-width: 120px;
+  width: 10vw;
+  top: -8%;
+  display: block;
+  z-index: 5;
+}
+
+.feuilleGauche{
+  left: 0%;
+}
+
+.feuilleDroite{
+  right: 0%;
+}
+
+.barreSeparationEtTitre{
+  width: 100%;
+  background-color: white;
+  height: 110px;
+  position: relative;
+  text-align: center;
+  z-index: 5;
+}
+
+h2{
+  font-size: 70px;
+  font-family: 'Vaivai_Handwritting', cursive;
+  line-height: 30px;
+}
+
+h3{
+  font-size: 50px;
+  font-family: 'Vaivai_Handwritting', cursive;
+  line-height: 60px;
+}
+
+@media screen and (max-width: 720px) {
+  .feuilleGauche, .feuilleDroite{
+    display: none;
+  }
+  
+  h3{
+    font-size: 9vw;
+  }
+}
+
+.section2{
+  height: auto;
+  background-image: url(../images/parcours/white-background.png);
+  background-size: 100%;
+  z-index: -2;
+  padding-bottom: 230px;
+}
+
+.combi{
+  width: 8%;
+  position: fixed;
+  top: 50%;
+  left :46%;
+}
+
+.combi img{
+  width: 100%;
+  height: 50%;
+  z-index: 3;
+  position: relative;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 920px) {
+  .combi img{
+    display: none;
+  }
+}
+
+/*
+
+Details parcours
+
+*/
+
+.blocGauche{
+  margin-top: 55px;
+  margin-left: 10px;
+  height: 40px;
+  background-color: rgba(255,255,255,0.6);
+  border-bottom : 0.2px solid silver;
+  text-align: right
+}
+
+.blocGauche h2{
+  padding-bottom: 20px;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  padding-top: 5px;
+  padding-right: 30px;
+}
+
+.blocDroit{
+  margin-top: 55px;
+  margin-left: 10px;
+  height: 40px;
+  background-color: rgba(255,255,255,0.8);
+  padding: 0;
+  position: relative;
+}
+
+.blocDroit h2{
+  padding-bottom: 20px;
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+  margin-top: 10px;
+  padding-bottom: 0;
+}
+
+.blocDroit .iconLieu{
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-right: 0.2px solid silver;
+  float: left;
+  text-align: center;
+}
+
+.iconLieu img{
+  height: 30px;
+  margin: 5px auto;
+}
+
+.blocDroit .textLieu{
+  float:left;
+  width: 60%;
+}
+
+.blocDroit .textLieu h2{
+  padding-left: 30px;
+  padding-top: 0;
+  margin-top: 3px;
+}
+
+@media screen and (max-width: 420px) {
+  .blocGauche h2{
+    padding-right: 0px;
+  }
+
+  .blocDroit .textLieu h2{
+    padding-left: 0px;
+    font-size: 20px;
+  }
+}
+
+.blocDroit .details{
+  position: absolute;
+  top: 0px;
+  right: 10px;
+}
+
+.runners{
+  background-color: #7db790;
+}
+
+.gym{
+  background-color: #d085b4;
+}
+
+.festival{
+  background-color: #5C5B61;
+}
+
+/* Dates */
+
+.blocDroit:hover .plus{
+  display: none;
+}
+
+.textDetail{
+  transition: linear 0.4s;
+  opacity: 0;
+  background-color: rgba(255,255,255,0.8);
+  margin: 0;
+  text-align: right;
+  padding-right: 5px;
+}
+
+.blocDroit:hover .textDetail{
+  opacity: 1;
+}
+
+/*
+
+Bouton fin de page
+
+*/
+
+.discoverCulture{
+  height: 150px;
+  position: relative;
+}
+
+.cocoCulture{
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  border-radius: 5px;
+  width: 250px;
+  height: 35px;
+  margin-left: -125px;
+  margin-top: -40px;
+  background: #ed237a;
+  font-family: 'Dosis', sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.cocoCulture:hover{
+  opacity: 0.4;
+  transition: linear 0.2s;
+}

@@ -1,0 +1,94 @@
+/**********************************************************************
+
+Cocoaddict CSS
+
+**********************************************************************/
+
+main{
+  text-align: center;
+  background-image: url(../images/tissus-a-theme-tissu-feuilles-de-palmier-en-280-cm-7432149-035-tissu-palmi7ab6-d42b1_big.jpg);
+  width:100%;
+  padding-top:30px;
+  background-repeat: repeat;
+  padding-bottom: 50px;
+}
+
+.blanc{
+  background-color:white;
+  margin: 0 12%;
+}
+
+.wordChange{
+  vertical-align:top;
+  color: #ed237a;
+}
+
+h3{
+  font-family: 'Vaivai_Handwritting', cursive;
+  color:black;
+  font-size:70px;
+  text-align: center;
+  margin-top:20px;
+}
+
+@media screen and (max-width: 920px) {
+  .blanc{
+    margin: 0;
+  }
+  
+  h3{
+    font-size: 20vw;
+  }
+  
+  .twitter{
+    margin: 10px;
+  }
+}
+
+.instagram.row div{
+  padding: 10px;
+}
+
+.photoInsta:hover{
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.logoInsta:hover, .logoTwitter:hover{
+  fill:#ed237a;
+}
+
+.logoTwitter svg{
+  margin: 30px;
+}
+
+/*
+
+Bouton fin de page
+
+*/
+
+.join{
+  height: 150px;
+  position: relative;
+}
+
+.jointhem{
+  position: absolute;
+  bottom: 50px;
+  border-radius: 5px;
+  width: 180px;
+  height: 35px;
+  margin-left: -90px;
+  margin-top: -17.5px;
+  background: #ed237a;
+  font-family: 'Dosis', sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.jointhem:hover{
+  opacity: 0.4;
+  transition: linear 0.2s;
+}
